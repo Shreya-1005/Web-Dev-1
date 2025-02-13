@@ -712,7 +712,7 @@ footer.contact {
 #bp-web-widget {
     position: fixed !important;
     bottom: 60px !important;
-    right: 18px !important;
+    right: 16px !important;
     z-index: 9999 !important;
 }
 
