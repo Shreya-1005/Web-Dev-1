@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Blogify</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <style>@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap');</style>
-</head>
+  <link rel="stylesheet" href="template.css" />
+
 
 <body>
   <!-- Navigation Menu -->
@@ -19,7 +18,7 @@
         <ul class="nav-links">
           <li><a href="#hero">Home</a></li>
           <li><a href="#about-us">About Us</a></li>
-          <li><a href="#footer">Contact</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <button class="btn create-post-btn" onclick="window.location.href='blog.html'">Create a Post</button>
@@ -28,14 +27,20 @@
 
   <!-- Hero Section -->
   <section id="hero" class="hero">
+    <!-- Video Background -->
+    <video autoplay muted loop class="hero-video">
+        <source src="Images/209022_medium.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Content Overlay -->
     <div class="container hero-content">
-      <h1>Welcome to Blogify</h1>
-      <p>Your voice is powerful—write down your thoughts, experiences, and insights with the world! Start writing today
-        and
-        create a space that reflects your journey!</p>
-      <button class="btn start-posting-btn" onclick="window.location.href='blog.html'">Start Posting</button>
+        <h1>Welcome to Blogify</h1>
+        <p>Your voice is powerful—write down your thoughts, experiences, and insights with the world! Start writing today
+            and create a space that reflects your journey!</p>
+        <button class="btn start-posting-btn" onclick="window.location.href='blog.html'">Start Posting</button>
     </div>
-  </section>
+</section>
 
   <!-- About Us Section -->
   <section id="about-us" class="about-us">
@@ -72,33 +77,78 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="contact" id="contact">
+  <!-- Choose your template -->
+   <section id="temp" class="temp">
     <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <h3>Contact Us</h3>
-          <p>
-            Blogify<br>
-            E-201, Kashmere Gate<br>
-            +91 9876XXXX21<br>
-            blogify@gmail.com
-          </p>
+      <h2>Choose Your Template</h2>
+      <p style="margin-bottom:50px;">Explore our templates and find the perfect one for your blog!</p>
+      <div class="template-container">
+        <div class="template temp1">
+          <img src="images/travel.jpeg" alt="Template 1" />
+          <h3>Template 1</h3>
+          <p>Template 1 is perfect for travel blogs and personal diaries.</p>
         </div>
-        <div class="col-md-6">
-          <h3>Follow Us</h3>
-          <ul class="social-media">
-            <li><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://x.com/?mx=2" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
-          </ul>
+        <div class="template temp2">
+          <img src="images/food.jpeg" alt="Template 2" />
+          <h3>Template 2</h3>
+          <p>Template 2 is ideal for food blogs and lifestyle journals.</p>
         </div>
+        <div class="template temp3">
+          <img src="images/bznz.jpeg" alt="Template 3" />
+          <h3>Template 3</h3>
+          <p>Template 3 is great for tech blogs and business articles.</p>
+        </div>
+
+        <button class="temp-button">Explore more!</button>
       </div>
-      <p style="text-align: center;">&copy; 2024 Blogify. All rights reserved.</p>
     </div>
-  </footer>
+   </section>
 
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-content">
+            <!-- Company Info -->
+            <div class="footer-section">
+                <h3>Blogify</h3>
+                <p>Share your voice with the world through engaging blog posts and stories.</p>
+            </div>
 
+            <!-- Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Create a Post</a></li>
+                </ul>
+            </div>
+
+            <!-- Connect -->
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-text">
+                © 2024 Blogify. All rights reserved.
+            </div>
+            <div class="social-icons">
+                <a href="#">Twitter</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 
 </html>
