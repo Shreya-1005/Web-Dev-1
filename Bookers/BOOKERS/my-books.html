@@ -16,6 +16,7 @@
                 <li><a href="my-books.html">My Books</a></li>
                 <li><a href="books-available.html">Books Available</a></li>
                 <li><a href="book-listing.html">List a Book</a></li>
+                <li><a href="#" id="logoutLink">Logout</a></li>
             </ul>
         </nav>
     </header>
@@ -32,5 +33,19 @@
     </footer>
 
     <script src="js/my-books.js"></script>
+    <script>
+        // Add logout functionality
+        document.getElementById('logoutLink').addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default link behavior
+
+            // Clear any stored data (e.g., authentication token or user info)
+            localStorage.removeItem('userToken'); // Example: Remove a token
+            sessionStorage.removeItem('userInfo'); // Example: Remove session data
+
+            // Redirect to the login page
+            window.location.href = 'login.html'; // Replace with your login page URL
+        });
+    </script>
+
 </body>
 </html>
